@@ -344,3 +344,28 @@ points[2025] = { -- "Thaldraszuz"
 	[54844346] = { 73859, 17321, 7 }, -- Elder Sik'ek
 	[50066654] = { 73861, 17321, 8 }, -- Elder Razlok
 }
+
+
+--------------------
+-- The War Within --
+--------------------
+
+points[2248] = { -- "TheIsleOfDorn"
+	[40918732] = { 85929, 41130, 1 }, -- Elder Rubbleglint
+	[48611392] = { 85930, 41130, 2 }, -- Elder Coppermoss
+}
+
+points[2214] = { -- "TheRingingDeeps"
+	[44766732] = { 85931, 41130, 3 }, -- Elder Farolt
+	[63125297] = { 85932, 41130, 4 }, -- Elder Silsigra
+}
+
+points[2215] = { -- "Hallowfall"
+	[25875194] = { 85933, 41130, 5 }, -- Elder Kynthall
+	[66284628] = { 85934, 41130, 6 }, -- Elder Swornvow
+}
+
+points[2255] = { -- "AzjKahet"
+	[66878551] = { 85935, 41130, 7 }, -- Elder Ikk'zivian
+	[46865720] = { 85936, 41130, 8 }, -- Elder Ikk'xataz
+}
