@@ -8,7 +8,7 @@
 
 
 -- declaration
-local _, LunarFestival = ...
+local addonName, LunarFestival = ...
 LunarFestival.points = {}
 
 
@@ -101,7 +101,7 @@ function LunarFestival:OnEnter(mapFile, coord)
 end
 
 function LunarFestival:OnLeave()
-		GameTooltip:Hide()
+	GameTooltip:Hide()
 end
 
 
@@ -110,19 +110,20 @@ local function createWaypoint(mapFile, coord)
 	local point = points[mapFile] and points[mapFile][coord]
 	local nameOfElder = GetAchievementCriteriaInfo(point[2], point[3])
 
-	TomTom:AddWaypoint(mapFile, x, y, { title = nameOfElder, persistent = nil, minimap = true, world = true })
+	TomTom:AddWaypoint(mapFile, x, y, { title = nameOfElder, from = addonName, persistent = false, minimap = true, world = true })
 end
 
 local function createAllWaypoints()
 	for mapFile, coords in next, points do
 		if not continents[mapFile] then
-		for coord, questID in next, coords do
-			if coord and (db.completed or not completedQuests[questID[1]]) then
-				createWaypoint(mapFile, coord)
+			for coord, questID in next, coords do
+				if coord and (db.completed or not completedQuests[questID[1]]) then
+					createWaypoint(mapFile, coord)
+				end
 			end
 		end
-		end
 	end
+
 	TomTom:SetClosestWaypoint()
 end
 
@@ -303,4 +304,4 @@ end
 
 
 -- activate
-LibStub("AceAddon-3.0"):NewAddon(LunarFestival, "HandyNotes_LunarFestival", "AceEvent-3.0")
+LibStub("AceAddon-3.0"):NewAddon(LunarFestival, addonName, "AceEvent-3.0")
