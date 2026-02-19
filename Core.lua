@@ -110,7 +110,8 @@ local function createWaypoint(mapFile, coord)
 	local point = points[mapFile] and points[mapFile][coord]
 	local nameOfElder = GetAchievementCriteriaInfo(point[2], point[3])
 
-	TomTom:AddWaypoint(mapFile, x, y, { title = nameOfElder, from = addonName, persistent = false, minimap = true, world = true })
+	TomTom:AddWaypoint(mapFile, x, y, { title = nameOfElder, from = addonName, arrivaldistance = 10, cleardistance = 5, minimap = true, world = true })
+	TomTom:SetClosestWaypoint()
 end
 
 local function createAllWaypoints()
@@ -123,8 +124,6 @@ local function createAllWaypoints()
 			end
 		end
 	end
-
-	TomTom:SetClosestWaypoint()
 end
 
 function LunarFestival:OnClick(button, down, mapFile, coord)
