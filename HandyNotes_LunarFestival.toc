@@ -8,6 +8,7 @@
 ## SavedVariables: HandyNotes_LunarFestivalDB
 ## RequiredDeps: HandyNotes
 ## X-Curse-Project-ID: 45902
+## X-Wago-ID: baND32Go
 
 Core.lua
 Data.lua
