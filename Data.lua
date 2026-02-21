@@ -135,11 +135,15 @@ points[89] = { -- "Darnassus"
 }
 
 points[66] = { -- "Desolace"
-	[29106255] = { 8635, 910, 3, true }, -- Elder Splitrock in Maraudon
+	[28866256] = { 8635, 910, 3, true }, -- Elder Splitrock in Maraudon
+}
+
+points[67] = { -- "Desolace"
+	[28053362] = { 8635, 910, 3, true }, -- Elder Splitrock in Maraudon
 }
 
 points[68] = { -- "Desolace"
-	[44637652] = { 8635, 910, 3, true }, -- Elder Splitrock in Maraudon
+	[44237721] = { 8635, 910, 3, true }, -- Elder Splitrock in Maraudon
 }
 
 points[1] = { -- "Durotar"
