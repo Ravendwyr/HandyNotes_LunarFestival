@@ -320,6 +320,18 @@ points[205] = { -- "VashjirRuins"
 	[57268615] = { 29738, 6006, 8 }, -- Elder Moonlance
 }
 
+if UnitFactionGroup("player") == "Alliance" then
+	points[84] = {
+		[73731909] = { 29735, 6006, 1 }, -- Elder Stonebrand
+		[73191965] = { 29734, 6006, 9 }, -- Elder Deepforge
+	}
+end
+
+if UnitFactionGroup("player") == "Horde" then
+	points[85][50853629] = { 29735, 6006, 1 } -- Elder Stonebrand
+	points[85][50493702] = { 29734, 6006, 9 } -- Elder Deepforge
+end
+
 
 ------------------
 -- Dragonflight --
