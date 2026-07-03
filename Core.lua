@@ -80,16 +80,16 @@ function LunarFestival:OnEnter(mapFile, coord)
 	local point = points[mapFile] and points[mapFile][coord]
 	local nameOfElder = GetAchievementCriteriaInfo(point[2], point[3])
 
-	GameTooltip:SetText(nameOfElder)
+	GameTooltip:SetText(nameOfElder, 1, 1, 1)
 
 	if notes[point[1]] then
 		GameTooltip:AddLine(notes[point[1]])
-		GameTooltip:AddLine(" ")
 	end
 
 	if TomTom then
-		GameTooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
-		GameTooltip:AddLine("Control-Right-click to set waypoints to every Elder.", 1, 1, 1)
+		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine("Right-click to set a waypoint.")
+		GameTooltip:AddLine("Control-Right-click to set waypoints to every Elder.")
 	end
 
 	GameTooltip:Show()
