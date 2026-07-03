@@ -1,12 +1,12 @@
-## Interface: 120001
+## Interface: 120007
 ## Title: HandyNotes: Lunar Festival
 ## Notes: Displays the locations of Lunar Festival elders.
 ## Author: Ravendwyr
 ## Version: @project-version@
-## IconTexture: interface/icons/spell_holy_symbolofhope
+## IconTexture: interface\icons\inv_misc_elvencoins
 ## X-Category: Map & Minimap
 ## SavedVariables: HandyNotes_LunarFestivalDB
-## RequiredDeps: HandyNotes
+## Dependencies: HandyNotes
 ## X-Curse-Project-ID: 45902
 ## X-Wago-ID: baND32Go
 
