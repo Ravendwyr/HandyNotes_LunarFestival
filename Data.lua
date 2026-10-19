@@ -7,6 +7,7 @@ local points = LunarFestival.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
+
 points[242] = { -- "BlackrockDepths"
 	[50536287] = { 8619, 910, 5 }, -- Elder Morndeep
 }
@@ -113,6 +114,7 @@ points[52] = { -- "Westfall"
 --------------
 -- Kalimdor --
 --------------
+
 points[63] = { -- "Ashenvale"
 	[35544891] = { 8725, 911, 9 }, -- Elder Riversong
 }
@@ -219,6 +221,7 @@ points[219] = { -- "ZulFarrak"
 ---------------
 -- Northrend --
 ---------------
+
 points[157] = { -- "AzjolNerub"
 	[21774356] = { 13022, 910, 9 }, -- Elder Nurgen
 }
@@ -300,6 +303,7 @@ points[121] = { -- "ZulDrak"
 ---------------
 -- Cataclysm --
 ---------------
+
 points[207] = { -- "Deepholm"
 	[49705488] = { 29735, 6006, 1 }, -- Elder Stonebrand
 	[27706918] = { 29734, 6006, 9 }, -- Elder Deepforge

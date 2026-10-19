@@ -1,4 +1,4 @@
-## Interface: 120007
+## Interface: 120105
 ## Title: HandyNotes: Lunar Festival
 ## Notes: Displays the locations of Lunar Festival elders.
 ## Author: Ravendwyr
@@ -7,6 +7,7 @@
 ## X-Category: Map & Minimap
 ## SavedVariables: HandyNotes_LunarFestivalDB
 ## Dependencies: HandyNotes
+## AllowLoadGameType: standard
 ## X-Curse-Project-ID: 45902
 ## X-Wago-ID: baND32Go
 
